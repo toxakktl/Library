@@ -1,6 +1,5 @@
 package com.yelemessov.LibraryExample.service;
 
-import com.datastax.driver.core.utils.UUIDs;
 import com.yelemessov.LibraryExample.model.Book;
 import com.yelemessov.LibraryExample.model.BookKey;
 import com.yelemessov.LibraryExample.repository.BookRepository;

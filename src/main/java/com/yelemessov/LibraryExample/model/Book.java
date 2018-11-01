@@ -1,14 +1,10 @@
 package com.yelemessov.LibraryExample.model;
 
-import org.springframework.data.cassandra.core.cql.Ordering;
-import org.springframework.data.cassandra.core.cql.PrimaryKeyType;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
-import org.springframework.data.cassandra.core.mapping.PrimaryKeyColumn;
 import org.springframework.data.cassandra.core.mapping.Table;
 
 import java.io.Serializable;
 import java.util.Set;
-import java.util.UUID;
 
 @Table("books_by_id")
 public class Book implements Serializable {
