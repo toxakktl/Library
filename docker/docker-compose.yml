@@ -11,7 +11,7 @@ services:
      SPRING_DATA_CASSANDRA_CONTACT_POINTS: cassandra
      SPRING_DATA_CASSANDRA_KEYSPACE_NAME: library
    container_name: spring-boot-cassandra
-   entrypoint: /wait-for-it.sh cassandra:9042 -- java -Djava.security.egd=file:/dev/./urandom -jar DockerLibrary.jar
+   entrypoint: /wait-for-it.sh cassandra:9042 -- java -Djava.security.egd=file:/dev/./urandom -jar app.jar
    depends_on:
      - "cassandra"
 
